@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<div class="box">
+    <div id="txt0">该怎么形容你最贴切</div>
+    <div id="txt1">那什么和你作比较才算特别</div>
+    <div id="txt2">对你的感觉特强烈</div>
+    <div class="btn">
+        <button id="btnok">确定</button>
+        <button id="btnno">取消</button>
+    </div>
+</div>
+</body>
+<style type="text/css">
+    body{
+        background: url(img/img1.jpg)no-repeat center center fixed;
+        background-size: cover;
+
+    }
+    .box{
+        position: absolute;
+        top:40%;
+        left:40%;
+        text-align: center;
+    }
+    #txt0{
+        color: #076FA2;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    #txt1{
+        color: #076FA2;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    #txt2{
+        color: #076FA2;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .btn{
+        position: relative;
+    }
+    button{
+        padding: 10px 20px;
+        background: #00FFFF;
+        border: none;
+        border-radius:4px;
+        outline:none;
+        margin: 0 40px;
+    }
+
+</style>
+<script type="text/javascript">
+    window.onload=function(){
+        var btnok=document.getElementById("btnok")
+        var btnno=document.getElementById("btnno")
+        btnok.onclick=function() {
+            var res = confirm("wait 3 second !")
+            console.log(res)
+            if(res==true) {
+                setTimeout(function (){
+                    window.location.href("first.html");
+                }, 3000)
+
+               // window.location.href("first.html")
+            }
+        }
+        function sixunhuan(){
+            while(true)
+            {
+                alert("傻屌")
+            }
+
+        }
+    }
+</script>
+</html>
